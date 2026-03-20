@@ -3,6 +3,9 @@
     padding: 0%;
     font-family: 'Merriweather', serif;
 }
+.body {
+    background-color: #f9f7f4;
+}
 .banner {
     background-color: #419971;
     padding: 5px;
@@ -35,8 +38,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-height: 70px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .logo {
     max-width: 140px;
@@ -44,14 +47,17 @@ nav {
 .down-arrow {
     max-width: 15px;
 }
-.search-bar input {
-    background-image: url('./assets/search.png') 15px;
-}
 
-/* .search-bar input {
+.search-bar {
+    background-color: #fff;
+    border: solid #bbaf9e 0.5px;
+    border-radius: 3px;
+    padding: 2px;
+}
+.search-bar input {
     border: none;
     outline: none;
-} */
+}
 .search-icon {
     max-width: 15px;
 }
@@ -68,4 +74,30 @@ nav a {
     font-style: normal;
     color: #333333;
     font-family: 'Lato', sans-serif;
+}
+.personal-stats {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.personal-stats h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    color: #333333;
+    font-weight: 600;
+    margin: 3px;
+    margin-bottom: 15px;
+}
+
+.book-image img {
+    max-width: 90px;
+}
+.dets {
+    max-width: 190px;
+}
+.dets h2 {
+    font-size: small;
+}
+.book {
+    margin-bottom: 15px;
+    display: flex;
 }
