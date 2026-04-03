@@ -24,56 +24,375 @@
         </div>
         <div class="body">
             <nav>
-                <img class="logo" src="./assets/goodreads_logo-removebg-preview.png" alt="" />
-                <a href="">Home</a>
-                <a href="">My Books</a>
-                <a href=""
-                    >Browse <img class="down-arrow" src="./assets/downward-arrow.png" alt=""
-                /></a>
-                <a href=""
-                    >Community <img class="down-arrow" src="./assets/downward-arrow.png" alt=""
-                /></a>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search books" />
-                    <img class="search-icon" src="./assets/search.png" alt="" />
+                <div class="navigation">
+                    <img class="logo" src="./assets/goodreads_logo-removebg-preview.png" alt="" />
+                    <div class="links-nav">
+                        <a href="">Home</a>
+                        <a href="">My Books</a>
+                        <a href=""
+                            >Browse
+                            <img class="down-arrow" src="./assets/downward-arrow.png" alt=""
+                        /></a>
+                        <a href=""
+                            >Community
+                            <img class="down-arrow" src="./assets/downward-arrow.png" alt=""
+                        /></a>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search books" />
+                        <img class="search-icon" src="./assets/search.png" alt="" />
+                    </div>
+                    <div class="icons-nav-main">
+                        <img class="icon-nav" src="./assets/notification.png" alt="" />
+                        <img class="icon-nav" src="./assets/conversation.png" alt="" />
+                        <img class="icon-nav" src="./assets/email.png" alt="" />
+                        <img class="icon-nav" src="./assets/group.png" alt="" />
+                        <img class="profile-icon-nav" src="./assets/profile.png" alt="profile" />
+                    </div>
                 </div>
-                <img class="icon-nav" src="./assets/notification.png" alt="" />
-                <img class="icon-nav" src="./assets/conversation.png" alt="" />
-                <img class="icon-nav" src="./assets/email.png" alt="" />
-                <img class="icon-nav" src="./assets/group.png" alt="" />
-                <img class="icon-nav" src="" alt="profile" />
             </nav>
-            <div class="personal-stats">
-                <h1>CURRENTLY READING</h1>
-                <div class="book">
-                    <div class="book-image"><img src="./assets/little-stranger.jpg" alt="" /></div>
-                    <div class="dets">
-                        <h2>Little Stranger (The Web of Silence Due...</h2>
-                        <span>by Leigh Rivers</span>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                            <span>54%</span>
+            <div class="hero-section">
+                <div class="personal-stats">
+                    <h1>CURRENTLY READING</h1>
+                    <div class="book">
+                        <div class="book-image">
+                            <img src="./assets/little-stranger.jpg" alt="" />
                         </div>
-                        <button>Update progress</button>
+                        <div class="dets">
+                            <h2>Little Stranger (The Web of Silence Due...</h2>
+                            <span>by Leigh Rivers</span>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <img src="./assets/57progress.png" alt="" /> <span>54%</span>
+                                </div>
+                            </div>
+                            <button id="update">Update progress</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div class="book-image">
+                            <img src="./assets/A-thousand-splendid-suns.jpg" alt="" />
+                        </div>
+                        <div class="dets">
+                            <h2>A Thousand Splendid Suns</h2>
+                            <span>by Khaled Hosseini</span>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <img src="./assets/6progress.png" alt="" /><span>6%</span>
+                                </div>
+                            </div>
+                            <button id="update">Update progress</button>
+                        </div>
+                    </div>
+                    <div class="more-links">
+                        <a href="">View all books</a>. <a href="">Add a book</a>.
+                        <a href="">General update</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="reading-challenge">
+                        <h1>2026 READING CHALLENGE</h1>
+                        <div class="book">
+                            <div class="book-image">
+                                <img src="./assets/readingchallenge.png" alt="" />
+                            </div>
+                            <div class="dets">
+                                <h1>0</h1>
+                                <h1>books completed</h1>
+                                <span>2 books behind schedule</span><img src="" alt="" />
+                                <h3>0/12 (0%)</h3>
+                                <a href="">View Challenge</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="want-read">
+                        <h2>WANT TO READ</h2>
+                        <div class="want-to-read-images">
+                            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
+                                src=""
+                                alt=""
+                            /><img src="" alt="" /><img src="" alt="" />
+                        </div>
+                        <a href="">View all books</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="bookshelf">
+                        <h2>BOOKSHELVES</h2>
+                        <div class="bookshelf-tags">
+                            <div class="tagsnum">
+                                <span>110</span>
+                                <span>2</span>
+                                <span>70</span>
+                                <span>0</span>
+                                <span>33</span>
+                                <span>4</span>
+                                <span>4</span>
+                            </div>
+
+                            <div class="tags">
+                                <a href="">Want to Read</a>
+                                <a href="">Currently Raeding</a>
+                                <a href="">Read</a>
+                                <a href="">Did Not Finish</a>
+                                <a href="">owned</a>
+                                <a href="">bought</a>
+                                <a href="">dnf-ed</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="book">
-                    <div class="book-image">
-                        <img src="./assets/A-thousand-splendid-suns.jpg" alt="" />
-                    </div>
-                    <div class="dets">
-                        <h2>A Thousand Splendid Suns</h2>
-                        <span>by Khaled Hosseini</span>
-                        <div class="progress">
-                            <div class="progress-bar"></div>
-                            <span>54%</span>
+                <div class="feed">
+                    <div class="card-banner">
+                        <img src="./assets/1771622613-1771622613_goodreads_misc.png" alt="" />
+                        <div class="card-text-section">
+                            <h2>New Heart_ Pounding Reads</h2>
+                            <p>
+                                Lose yourself in grpping whodunits, edge-of-your-seat thrillers, and
+                                chilling horror this spring.
+                            </p>
                         </div>
-                        <button>Update progress</button>
+                    </div>
+                    <div class="updates-head">
+                        <div class="heading-update-head"><h1>UPDATES</h1></div>
+                        <div class="customize">
+                            <img src="./assets/setting.png" alt="" /><button>Customize</button>
+                        </div>
+                    </div>
+                    <img src="./assets/post-update.png" alt="" class="profile-update-img" />
+
+                    <div class="card">
+                        <div class="card-profile-info">
+                            <h3>Nour97d</h3>
+                            <span>wants to read</span>
+                            <span class="date-update">6d</span>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716908352i/348375._SY180_.jpg"
+                                alt=""
+                                class="updates-book-img"
+                            />
+                        </div>
+                        <div class="details-update">
+                            <h1>Sleeping dog</h1>
+                            <h3>by Sonya Hartnett</h3>
+                            <button>want to Read</button>
+                            <p>
+                                The Willows live on an old farm that also houses a ramshackle
+                                trailer park. Over the years Griffin willos the volatile head of the
+                                family, has cowed his wife Grace into near-...
+                            </p>
+                            <a href="">Like</a><a href="">Comment</a><a href="">Preview Book</a>
+                        </div>
+                        <div class="cmnt-div">
+                            <div class="profile-img">
+                                <img
+                                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpghttps://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="cmn"><textarea name="" id=""></textarea></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-profile-info">
+                            <h3>Nour97d</h3>
+                            <span>wants to read</span>
+                            <span class="date-update">6d</span>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716908352i/348375._SY180_.jpg"
+                                alt=""
+                                class="updates-book-img"
+                            />
+                        </div>
+                        <div class="details-update">
+                            <h1>Sleeping dog</h1>
+                            <h3>by Sonya Hartnett</h3>
+                            <button>want to Read</button>
+                            <p>
+                                The Willows live on an old farm that also houses a ramshackle
+                                trailer park. Over the years Griffin willos the volatile head of the
+                                family, has cowed his wife Grace into near-...
+                            </p>
+                            <a href="">Like</a><a href="">Comment</a><a href="">Preview Book</a>
+                        </div>
+                        <div class="cmnt-div">
+                            <div class="profile-img">
+                                <img
+                                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpghttps://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="cmn"><textarea name="" id=""></textarea></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-profile-info">
+                            <h3>Nour97d</h3>
+                            <span>wants to read</span>
+                            <span class="date-update">6d</span>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716908352i/348375._SY180_.jpg"
+                                alt=""
+                                class="updates-book-img"
+                            />
+                        </div>
+                        <div class="details-update">
+                            <h1>Sleeping dog</h1>
+                            <h3>by Sonya Hartnett</h3>
+                            <button>want to Read</button>
+                            <p>
+                                The Willows live on an old farm that also houses a ramshackle
+                                trailer park. Over the years Griffin willos the volatile head of the
+                                family, has cowed his wife Grace into near-...
+                            </p>
+                            <a href="">Like</a><a href="">Comment</a><a href="">Preview Book</a>
+                        </div>
+                        <div class="cmnt-div">
+                            <div class="profile-img">
+                                <img
+                                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpghttps://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="cmn"><textarea name="" id=""></textarea></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-profile-info">
+                            <h3>Nour97d</h3>
+                            <span>wants to read</span>
+                            <span class="date-update">6d</span>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716908352i/348375._SY180_.jpg"
+                                alt=""
+                                class="updates-book-img"
+                            />
+                        </div>
+                        <div class="details-update">
+                            <h1>Sleeping dog</h1>
+                            <h3>by Sonya Hartnett</h3>
+                            <button>want to Read</button>
+                            <p>
+                                The Willows live on an old farm that also houses a ramshackle
+                                trailer park. Over the years Griffin willos the volatile head of the
+                                family, has cowed his wife Grace into near-...
+                            </p>
+                            <a href="">Like</a><a href="">Comment</a><a href="">Preview Book</a>
+                        </div>
+                        <div class="cmnt-div">
+                            <div class="profile-img">
+                                <img
+                                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpghttps://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1701181701i/156496214._UX60_CR0,0,60,60_.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="cmn"><textarea name="" id=""></textarea></div>
+                        </div>
                     </div>
                 </div>
+                <div class="recs">
+                    <h1>News and Interviews</h1>
+                    <p>136 Reader-Approved Myseteries & Thrillers of the Past Decade</p>
+                    <img src="https://images.gr-assets.com/blogs/1774639700p7/3093.jpg" alt="" />
+                    <span>124 likes</span>
+                    <div class="divider"></div>
+                    <h1>RECOMMENDATIONS</h1>
+                    <p>Because you enjoyed <a href="">Five Feet Apart:</a></p>
+                    <div class="card-recs">
+                        <img
+                            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1495992139i/35247769._SY180_.jpg"
+                            alt=""
+                        />
+                        <h2>
+                            Always and Forever, Lara Jean (To All the Boys I've Loved Before. #3)
+                        </h2>
+                        <span>by Jenny Han</span>
+                        <img src="./assets/1771622613-1771622613_goodreads_misc.png" alt="" /><span
+                            >3.99</span
+                        >
+                    </div>
+                    <p>
+                        Lara Jean is having the best senior year. ANd there's still so much to look
+                        forward to: a class trip to New York City, prom with her boyfriend Peter,
+                        Beach Week after graduat... <a href="Continue reading"></a>
+                    </p>
+                    <a href="">View all books similar to Five Feet Apart</a>
+                    <div class="divider"></div>
+                    <h1>GOODREADS CHOICE AWARDS</h1>
+                    <div class="choice-awards-card">
+                        <img
+                            src="https://s.gr-assets.com/assets/award/2025/choice-logo-home-module-medium-65d014bf74b7b281cd79460347cffea3.png"
+                            alt=""
+                        />
+                        <h1>Announcing Readers' Favourite Books of 2025</h1>
+                        <button>See the Winners</button>
+                        <span>7,516,397 Votes Cast</span>
+                        <span>zoë, Eren, and kim ౨ৎ have voted.</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="company">
+                        <h1>COMPANY</h1>
+                        <ul>
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Terms</li>
+                            <li>Privacy</li>
+                            <li>Interests Based Ads</li>
+                            <li>Ad Preferences</li>
+                            <li>Your Ads Privacy Choices</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+                    <div class="work-with-us">
+                        <ul>
+                            <li>Authors</li>
+                            <li>Advertise</li>
+                            <li>Authors & ads blog</li>
+                        </ul>
+                    </div>
+                </div>
+                <h1>CONNECT</h1>
+                <img
+                    src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg"
+                    alt=""
+                />
+                <img
+                    src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg"
+                    alt=""
+                />
+                <img
+                    src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg"
+                    alt=""
+                /><img
+                    src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg"
+                    alt=""
+                />
             </div>
-            <div class="feed"></div>
-            <div class="recs"></div>
+            <div>
+                <img
+                    src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg"
+                    alt=""
+                /><img
+                    src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png"
+                    alt=""
+                />
+            </div>
+            <p>Mobile Version</p>
+            <span>© 2026 Goodreads LLC</span>
+            <h3>
+                <img
+                    src="                https://s.gr-assets.com/assets/an-amazon-company-logo-3c0633d5a147e80dbcba4292261830e4.svg
+"
+                    alt=""
+                />
+            </h3>
         </div>
     </body>
 </html>
