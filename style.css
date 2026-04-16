@@ -6,6 +6,7 @@
 .body {
     background-color: #f9f7f4;
 }
+/* upper green line with text */
 .banner {
     background-color: #419971;
     padding: 5px;
@@ -19,7 +20,7 @@
     max-height: 22px;
     margin: 1%;
 }
-.main-text-banner {
+.banner-text {
     font-family: 'Merriweather', serif;
     font-size: medium;
     font-weight: 600;
@@ -98,13 +99,15 @@ nav a {
     color: #333333;
     font-family: 'Lato', sans-serif;
 }
+/* main page and its contents */
 .hero-section {
     display: flex;
 }
 /* currently reading section */
 .personal-stats {
-    margin-right: 60px;
-    margin-left: 60px;
+    /* margin-right: 60px; */
+    margin-left: 63px;
+    min-width: 26vw;
 }
 .personal-stats h1 {
     font-family: 'Lato', sans-serif;
@@ -165,6 +168,7 @@ nav a {
     margin-top: 7px;
     margin-bottom: 7px;
 }
+
 .bookshelf h2 {
     display: block;
     font-family: 'Lato', sans-serif;
@@ -204,14 +208,17 @@ nav a {
 }
 /* feed section */
 .feed {
-    margin-top: 5px;
-    max-width: 500px;
+    margin-top: 10px;
+    max-width: 520px;
+}
+.feed a {
+    color: #419971;
 }
 .card-banner img {
-    max-width: 500px;
+    max-width: 517px;
 }
 .card-banner {
-    max-width: 500px;
+    max-width: 523px;
     background-color: #fff;
     border: solid rgb(226, 224, 224) 0.5px;
     border-radius: 3px;
@@ -265,27 +272,49 @@ nav a {
     background-color: #fff;
     border-radius: 2px;
     border: solid rgb(226, 224, 224) 0.5px;
-    margin: 5px;
+    margin-bottom: 15px;
+}
+.card-main-body {
+    display: flex;
+    margin-left: 3vw;
 }
 .profile-update-img {
     max-width: 40px;
     border-radius: 30px;
     margin-top: 10px;
-    float: left;
+    margin-left: -1vw;
 }
 .card-profile-info {
     background-color: #fff;
     border-radius: 2px;
-    margin: 5px;
+}
+
+.right-card-profile-info {
+    display: flex;
+}
+.profile-card-nameandspan {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.right-card-profile-info span {
+    margin-left: 7px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 .card-profile-info h3 {
     font-family: 'Lato', sans-serif;
     font-size: small;
     font-weight: 600;
-    margin: 20px;
 }
 .date-update {
     float: right;
+    margin-top: -30px;
+    margin-right: 1vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 5px;
+    font-weight: 400;
+    color: grey;
 }
 .card-profile-info span {
     display: flex;
@@ -294,12 +323,178 @@ nav a {
 }
 .updates-book-img {
     max-width: 110px;
+    margin-right: 10px;
+}
+.want-to-read-button {
+    background-color: #409d69;
+    border: 2vw #409d69;
+    border-radius: 5%;
+    padding: 1%;
+    width: 11vw;
+    margin-right: 7px;
+}
+.want-to-read-button img {
+    max-width: 1vw;
+    border-color: black;
+    margin-top: 2%;
+}
+.want-to-read-button button {
+    background-color: #419971;
+    color: #fff;
+    border: none;
+    padding-right: 25%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin: 3%;
+}
+.details-update h1 {
+    font-size: large;
+}
+.details-update h3 {
+    font-weight: 400;
+    font-size: small;
+    margin-top: 1%;
+}
+.card-info-a {
+    display: flex;
+    color: grey;
+    font-size: smaller;
+}
+.rating-details img {
+    max-width: 4vw;
+}
+.rating-details {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.rating-details span {
+    font-family: 'Lato', sans-serif;
+    font-size: smaller;
+}
+.details-update p {
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 2vw;
+    line-height: 1.4;
+}
+.creading {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: #2b6c4f;
+}
+.react-card-info a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    font-weight: 500;
+}
+.react-card-info {
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+.divider-card {
+    border-bottom: solid rgb(226, 224, 224) 0.5px;
+}
+.cmnt-div {
+    display: flex;
+    padding: 8px;
+    background-color: rgba(216, 216, 216, 0.3);
+}
+.profile-img img {
+    border-radius: 5vw;
+    height: 30px;
+}
+.cmnt-div textarea {
+    width: 97%;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(82, 80, 80, 0.128);
+    margin-left: 1vw;
+    margin-top: 3px;
+    font-family: 'Lato', sans-serif;
+    padding: 3px;
+    font-weight: 400;
+    font-size: smaller;
 }
 .recs {
     padding: 1vw;
+    margin-top: 8px;
+    margin-left: 1vw;
+    width: 400px;
 }
-.recs h1 {
+.recs-head h1,
+.goodreads-awards-head h1,
+.recs-recomendation-section h1 {
     font-family: 'Lato', sans-serif;
-    font-size: small;
+    font-size: 15px;
     font-weight: 600;
+    color: #474646;
+}
+.recs-head p {
+    font-size: small;
+    margin-top: 1vw;
+    color: #2b6c4f;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+.recs span {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: grey;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+.abc {
+    font-family: 'Lato', sans-serif;
+    color: #474646;
+    font-weight: 500;
+    font-size: small;
+}
+.abc a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.space-between {
+    margin: 2vw;
+}
+.card-recs {
+    display: flex;
+    margin: 1vw;
+}
+.card-recs h2 {
+    font-size: small;
+}
+.card-text-recs {
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+.rating-recs-card img {
+    width: 60px;
+    height: 15px;
+    margin-top: 5px;
+}
+.rating-recs-card {
+    display: flex;
+}
+.recs-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
+.link-viewall {
+    margin-top: 1vw;
+}
+.goodreads-content-card {
+    background-color: #333d30;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
