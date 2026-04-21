@@ -107,7 +107,7 @@ nav a {
 .personal-stats {
     /* margin-right: 60px; */
     margin-left: 63px;
-    min-width: 26vw;
+    max-width: 26vw;
 }
 .personal-stats h1 {
     font-family: 'Lato', sans-serif;
@@ -167,6 +167,7 @@ nav a {
     border-bottom: solid rgb(226, 224, 224) 0.5px;
     margin-top: 7px;
     margin-bottom: 7px;
+    max-width: 289px;
 }
 
 .bookshelf h2 {
@@ -205,6 +206,13 @@ nav a {
 }
 .tags a {
     display: block;
+}
+.want-to-read-images img {
+    max-width: 96px;
+}
+.want-to-read-images {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 /* feed section */
 .feed {
@@ -342,7 +350,7 @@ nav a {
     background-color: #419971;
     color: #fff;
     border: none;
-    padding-right: 25%;
+    padding-right: 20%;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     margin: 3%;
@@ -372,11 +380,10 @@ nav a {
     font-size: smaller;
 }
 .details-update p {
-    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #333333;
-    margin-top: 2vw;
+    color: #0b0b0b;
     line-height: 1.4;
 }
 .creading {
@@ -424,8 +431,16 @@ nav a {
     padding: 1vw;
     margin-top: 8px;
     margin-left: 1vw;
-    width: 400px;
+    width: 500px;
 }
+.recs-content,
+.recs-content img {
+    max-width: 283px;
+}
+.connect h1,
+.want-read h2,
+.company h1,
+.work-with-us h1,
 .recs-head h1,
 .goodreads-awards-head h1,
 .recs-recomendation-section h1 {
@@ -464,6 +479,9 @@ nav a {
 .space-between {
     margin: 2vw;
 }
+.card-img-recs img {
+    max-width: 100px;
+}
 .card-recs {
     display: flex;
     margin: 1vw;
@@ -489,6 +507,7 @@ nav a {
     color: #333333;
 }
 .link-viewall {
+    margin-bottom: 1vw;
     margin-top: 1vw;
 }
 .goodreads-content-card {
@@ -497,4 +516,69 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.choice-awards-card {
+    background-color: #333d30;
+}
+.goodreads-content-card h1 {
+    font-size: medium;
+    text-align: start;
+    margin-left: 2vw;
+    margin-right: 3vw;
+    margin-top: 1vw;
+}
+.goodreads-content-card button {
+    background-color: #ffd767;
+    border: none;
+    color: black;
+    border-radius: 3px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 6%;
+}
+.goodreads-content-card-span span {
+    color: white;
+    text-align: start;
+    margin-left: 2vw;
+    margin-right: 3vw;
+}
+.goodreads-content-card-span {
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+.for-more {
+    display: flex;
+}
+.company ul,
+.work-with-us ul {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.company ul li,
+.work-with-us ul li {
+    line-height: 1.9;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+}
+.connect img {
+    margin-top: 1vw;
+    margin-right: 2%;
+}
+.licenses p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+}
+.licenses span {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.licenses img {
+    width: 130px;
 }
